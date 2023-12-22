@@ -1,0 +1,18 @@
+CREATE TABLE supermarket_sales(
+	invoice_id VARCHAR(50),
+	branch CHAR(1),
+	city CHAR(50),
+	customer_type CHAR(50),
+	gender CHAR(10),
+	product_line CHAR(50),
+	unit_price DECIMAL(100, 2),
+	quantity INTEGER,
+	"tax 5%" DECIMAL(100,10),
+	total INTEGER,
+	date_of_transaction DATE,
+	time_of_Transaction TIME, 
+	payment CHAR(10),
+	cogs DECIMAL(100,2),
+	gross_margin_percentage         	DECIMAL(100,10),
+	gross_income DECIMAL(100,10),
+	rating DECIMAL(100,1);
