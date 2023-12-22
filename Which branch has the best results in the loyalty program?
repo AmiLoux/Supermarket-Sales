@@ -1,0 +1,15 @@
+SELECT branch, SUM(quantity)  AS total_unit_sales 
+FROM supermarket_sales 
+WHERE customer_type = 'Member'
+GROUP BY branch
+ORDER BY SUM(quantity) DESC;
+
+
+
+
+
+SELECT branch, SUM(gross_income) AS total_unit_sales 
+FROM supermarket_sales 
+WHERE customer_type = 'Member'
+GROUP BY branch
+ORDER BY sum(gross_income) DESC;
