@@ -1,0 +1,4 @@
+SELECT product_line, sum(gross_income) 
+FROM supermarket_sales
+GROUP BY product_line
+ORDER BY sum(gross_income);
