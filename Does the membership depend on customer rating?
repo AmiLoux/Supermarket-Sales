@@ -1,0 +1,3 @@
+SELECT customer_type, AVG(rating) AS avg_rating
+FROM supermarket_sales
+GROUP BY customer_type;
