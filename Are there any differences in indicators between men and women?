@@ -1,0 +1,16 @@
+SELECT gender, customer_type, COUNT(gender) AS total_membership_type
+FROM supermarket_sales
+GROUP BY customer_type, gender
+ORDER BY gender
+
+
+
+SELECT gender, SUM(gross_income) FROM supermarket_sales
+GROUP BY gender
+
+
+
+SELECT product_line, gender, SUM(gross_income)
+FROM supermarket_sales
+GROUP BY product_line, gender
+ORDER BY SUM(gross_income) DESC
